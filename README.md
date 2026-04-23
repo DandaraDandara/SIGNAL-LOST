@@ -1,8 +1,18 @@
-## 🎮 Nome do Jogo (NI1 - POO)
+
+## 🎮 PHANTOM-7 (NI1 - POO)
 #### gif
+
+<!-- Colocar o gif aqui - tirardo comentário
+<p align="center">
+  <img src="./img/asset_promocional.jpg" alt="Banner" width="100%">
+</p> 
+-->
+
 ### Descrição
 ### 🚀 Como Jogar
 Abra o arquivo `index.html` no seu navegador.
+
+**Caminho:** `src` > `index.html`
 
 ### 🛠️ Conceitos de POO Aplicados
 - **Herança:** A classe `Enemy` herda de `Sprite`.
@@ -18,4 +28,4 @@ Este projeto foi desenvolvido com auxílio das ferramentas:
 ### Referências
 - MDN Web Docs
 - w3schools
-- Mario Souto(Dev-soutinho): https://www.youtube.com/watch?v=jOAU81jdi-c&list=PLTcmLKdIkOWmeNferJ292VYKBXydGeDej
+- **Mario Souto(Dev-soutinho):** https://www.youtube.com/watch?v=jOAU81jdi-c&list=PLTcmLKdIkOWmeNferJ292VYKBXydGeDej
