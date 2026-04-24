@@ -1,0 +1,40 @@
+
+### **RELATÓRIO DE OPERAÇÃO: PROJETO PHANTOM-7**
+**STATUS:** ARQUIVO CRIPTOGRAFADO // NÍVEL DE ACESSO: ADMINISTRADOR
+**DATA:** 24.04.2099
+**LOCAL:** TERMINAL INDEPENDENTE - SETOR DE CONTENÇÃO
+
+#### **1. O CONTEXTO NARRATIVO (O PROLOGUE)**
+O ano é **2099**. A infraestrutura global de dados ruiu, e o que restou da civilização digital sobrevive em camadas de códigos obsoletos. Em meio aos escombros de um antigo servidor, um sinal de 8-bits foi detectado. Não é um erro; é uma fenda. Através do protocolo **PHANTOM-7**, estabelecemos uma conexão instável com o ano de **1987**. No outro lado da linha, **Kaori**, uma cientista isolada no laboratório Setor 4, luta contra "Invasores" que buscam apagar sua existência. Você é o Operador. Suas decisões em 2099 são a única âncora que impede que Kaori seja devorada pelo tempo.
+
+#### **2. OS CAMINHOS DO PARADOXO (MECÂNICA DE ESCOLHA)**
+A arquitetura do jogo foi construída sobre um sistema de **Saturação de Paradoxo**. O software ativamente tenta induzir o jogador ao erro, exigindo precisão técnica e narrativa. Os caminhos ramificam-se em três estados de falha e um único e perigoso estado de resolução:
+
+* **[FALHA] O Silêncio Absoluto:** A perda de confiança faz com que Kaori desista da conexão. Ela permanece em 1987, esquecida, enquanto o terminal de 2099 entra em loop infinito.
+* **[FALHA] Colapso de Fenda:** O excesso de paradoxo rompe a barreira temporal violentamente, resultando em um *Crash* do sistema (Blue Screen de hardware).
+* **[FALHA] Captura de Dados:** Os Invasores interceptam Kaori no mapa tático (Setor 4). O registro histórico dela é deletado em tempo real.
+* **[CAMINHO ÔMEGA] O Protocolo de Sacrifício:** O único caminho onde Kaori sobrevive.
+
+#### **3. O DESFECHO: O SACRIFÍCIO DO OPERADOR (A TRAGÉDIA TÉCNICA)**
+A parte final do projeto desafia a lógica tradicional de "vitória". Para salvar Kaori, o Operador deve executar o **Protocolo de Sacrifício**. 
+
+Tecnicamente, isso é implementado através de uma **Exceção Proposital Não Tratada**. No momento em que Kaori atinge a saída do Setor 4, o jogador deve transferir toda a carga de paradoxo para o seu próprio terminal em 2099. 
+* **A Consequência:** Kaori é ancorada na realidade e foge, mas o preço é a integridade do sistema do Operador. O jogo termina com uma sequência de **Bugs Visuais Críticos**: o código das classes POO vaza para a interface, os pixels "sangram" e o terminal entra em colapso térmico. 
+
+**Você a salvou, mas em 2099, o seu sinal se apaga para sempre.**
+
+---
+
+### **RESUMO TÉCNICO**
+* **Estrutura:** Programação Orientada a Objetos (POO) com classes modulares.
+* **Conceitos Aplicados:** * **Encapsulamento:** Para proteger o estado de paradoxo.
+    * **Polimorfismo:** Para renderizar diferentes tipos de falha usando o mesmo método base.
+    * **Modularidade:** Divisão clara entre o Engine de Diálogo e o Motor de Mapa Tático.
+* **Inovação:** O uso de bugs visuais narrativos como ferramenta de storytelling, transformando falhas técnicas em clímax dramático.
+
+
+MACETE 
+Final,Condição Técnica,Resultado Narrativo
+**Sacrifício**,LAYOUT_MAPA[pos][pos] === 2,Kaori vive em 1987; Terminal de 2099 é destruído.
+**Colapso**,this.passos >= this.maxPassos,A fenda temporal fecha por instabilidade (Time Out).
+**Captura**,posicaoKaori === posicaoInvasores,O SYSTEM_ADMIN falha e o sistema é desligado (BSOD).

@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #050505; /* Fundo quase preto */
+    overflow: hidden; /*retira a rolagem da tela*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+canvas {
+    border: 2px solid #111;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.1); /* Brilho verde sutil */
+    image-rendering: pixelated;
+}
