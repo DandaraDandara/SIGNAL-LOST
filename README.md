@@ -1,10 +1,10 @@
 # PHANTOM-7 // PROTOCOLO DE TRANSMISSÃO
 
 <p align="center">
-  <img src="./Assets/Banner.png" width="600" alt="PHANTOM-7 Terminal">
+  <img src="./Assets/asset_promocional.jpg" width="600" alt="PHANTOM-7 Terminal">
 </p>
 
-### LOG_ENTRY: STATUS_SISTEMA
+### <LOG_ENTRY: STATUS_SISTEMA
 
 Em **2099**, a tecnologia que conhecemos é apenas sucata digital. No entanto, escondida nas camadas de um antigo terminal CRT, foi detetada uma anomalia: um sinal analógico, vindo diretamente de **1987**. No outro lado da fenda está **Kaori**, uma cientista cujos passos no laboratório Setor 4 estão a ser caçados por algo que o código não consegue identificar.
 
