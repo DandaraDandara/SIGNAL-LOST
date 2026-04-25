@@ -1,40 +1,136 @@
+RELATÓRIO DE OPERAÇÃO: PROJETO PHANTOM-7
+STATUS: ARQUIVO CRIPTOGRAFADO // NÍVEL DE ACESSO: ADMINISTRADOR
+DATA: 24.04.2099
+LOCAL: TERMINAL INDEPENDENTE - SETOR DE CONTENÇÃO
+========================================================================================================================================================================================================================
 
-### **RELATÓRIO DE OPERAÇÃO: PROJETO PHANTOM-7**
-**STATUS:** ARQUIVO CRIPTOGRAFADO // NÍVEL DE ACESSO: ADMINISTRADOR
-**DATA:** 24.04.2099
-**LOCAL:** TERMINAL INDEPENDENTE - SETOR DE CONTENÇÃO
-
-#### **1. O CONTEXTO NARRATIVO (O PROLOGUE)**
-O ano é **2099**. A infraestrutura global de dados ruiu, e o que restou da civilização digital sobrevive em camadas de códigos obsoletos. Em meio aos escombros de um antigo servidor, um sinal de 8-bits foi detectado. Não é um erro; é uma fenda. Através do protocolo **PHANTOM-7**, estabelecemos uma conexão instável com o ano de **1987**. No outro lado da linha, **Kaori**, uma cientista isolada no laboratório Setor 4, luta contra "Invasores" que buscam apagar sua existência. Você é o Operador. Suas decisões em 2099 são a única âncora que impede que Kaori seja devorada pelo tempo.
-
-#### **2. OS CAMINHOS DO PARADOXO (MECÂNICA DE ESCOLHA)**
-A arquitetura do jogo foi construída sobre um sistema de **Saturação de Paradoxo**. O software ativamente tenta induzir o jogador ao erro, exigindo precisão técnica e narrativa. Os caminhos ramificam-se em três estados de falha e um único e perigoso estado de resolução:
-
-* **[FALHA] O Silêncio Absoluto:** A perda de confiança faz com que Kaori desista da conexão. Ela permanece em 1987, esquecida, enquanto o terminal de 2099 entra em loop infinito.
-* **[FALHA] Colapso de Fenda:** O excesso de paradoxo rompe a barreira temporal violentamente, resultando em um *Crash* do sistema (Blue Screen de hardware).
-* **[FALHA] Captura de Dados:** Os Invasores interceptam Kaori no mapa tático (Setor 4). O registro histórico dela é deletado em tempo real.
-* **[CAMINHO ÔMEGA] O Protocolo de Sacrifício:** O único caminho onde Kaori sobrevive.
-
-#### **3. O DESFECHO: O SACRIFÍCIO DO OPERADOR (A TRAGÉDIA TÉCNICA)**
-A parte final do projeto desafia a lógica tradicional de "vitória". Para salvar Kaori, o Operador deve executar o **Protocolo de Sacrifício**. 
-
-Tecnicamente, isso é implementado através de uma **Exceção Proposital Não Tratada**. No momento em que Kaori atinge a saída do Setor 4, o jogador deve transferir toda a carga de paradoxo para o seu próprio terminal em 2099. 
-* **A Consequência:** Kaori é ancorada na realidade e foge, mas o preço é a integridade do sistema do Operador. O jogo termina com uma sequência de **Bugs Visuais Críticos**: o código das classes POO vaza para a interface, os pixels "sangram" e o terminal entra em colapso térmico. 
-
-**Você a salvou, mas em 2099, o seu sinal se apaga para sempre.**
-
----
-
-### **RESUMO TÉCNICO**
-* **Estrutura:** Programação Orientada a Objetos (POO) com classes modulares.
-* **Conceitos Aplicados:** * **Encapsulamento:** Para proteger o estado de paradoxo.
-    * **Polimorfismo:** Para renderizar diferentes tipos de falha usando o mesmo método base.
-    * **Modularidade:** Divisão clara entre o Engine de Diálogo e o Motor de Mapa Tático.
-* **Inovação:** O uso de bugs visuais narrativos como ferramenta de storytelling, transformando falhas técnicas em clímax dramático.
+[CONCEITUALIZAÇÃO]
+A concepção inicial deste projeto foi profundamente influenciada pela obra Fortaleza Impossível, de Jason Rekulak.
+O livro retrata com fidelidade o cenário tecnológico de 1987 — ano em que este jogo também é ambientado — destacando as limitações de hardware de máquinas como o Commodore 64.
+A narrativa de Rekulak resgata a importância dos jogos baseados em texto e na arte ASCII, que precederam a popularização da pixel art detalhada. 
+Essa referência serviu como guia para a escolha da estética visual e da mecânica narrativa, priorizando a imaginação do jogador e a eficiência gráfica da época."
 
 
-MACETE 
-Final,Condição Técnica,Resultado Narrativo
-**Sacrifício**,LAYOUT_MAPA[pos][pos] === 2,Kaori vive em 1987; Terminal de 2099 é destruído.
-**Colapso**,this.passos >= this.maxPassos,A fenda temporal fecha por instabilidade (Time Out).
-**Captura**,posicaoKaori === posicaoInvasores,O SYSTEM_ADMIN falha e o sistema é desligado (BSOD).
+[BRAINSTORMING]
+Focado em alinhar a proposta do jogo aos requisitos técnicos da disciplina, gerei algumas ideias que seriam interessantes para a proposta de jogo 
+dentro do meu propósito e requisitos. O objetivo central foi equilibrar uma narrativa criativa com a aplicação prática de lógica de programação, 
+utilizando JavaScript e a API Canvas.Escolhi trabalhar encima da minha proposta de jogo inicial desenvolvendo uma proposta que não focasse tanto
+na manipulação de assets, mas no necessário gráfico e aplicação dos conceitos base de POO, mas que trouxesse uma chamada criativa e que instigasse o usuário.
+
+========================================================================================================================================================================================================================
+
+
+[CONTEXTO NARRATIVO]
+O ano é 2099. A infraestrutura global de dados ruiu, e o que restou da civilização digital sobrevive em camadas de códigos obsoletos. Em meio aos escombros de um antigo servidor, 
+um sinal de 8-bits foi detectado. Não é um erro; é uma fenda. Através do protocolo PHANTOM-7, estabelecemos uma conexão instável com o ano de 1987.No outro lado da linha, Kaori, 
+uma cientista isolada no laboratório Setor 4, luta contra "Invasores" que buscam apagar sua existência. Você é o Operador. Suas decisões em 2099 são a única âncora que impede 
+que Kaori seja devorada pelo tempo.
+
+[OS CAMINHOS DO PARADOXO (MECÂNICA DE ESCOLHA)]
+A arquitetura do jogo foi construída sobre um sistema de Saturação de Paradoxo. O software ativamente tenta induzir o jogador ao erro, exigindo precisão técnica e narrativa. 
+Os caminhos ramificam-se em três estados de falha e um único e perigoso estado de resolução:
+
+[FALHA] O Silêncio Absoluto: A perda de confiança faz com que Kaori desista da conexão. Ela permanece em 1987, esquecida, enquanto o terminal de 2099 entra em loop infinito.
+[FALHA] Colapso de Fenda: O excesso de paradoxo rompe a barreira temporal violentamente, resultando em um Crash do sistema (Blue Screen de hardware).
+[FALHA] Captura de Dados: Os Invasores interceptam Kaori no mapa tático (Setor 4). O registro histórico dela é deletado em tempo real.
+[CAMINHO ÔMEGA] O Protocolo de Sacrifício: O único caminho onde Kaori sobrevive.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[O DESFECHO] O SACRIFÍCIO DO OPERADOR (A TRAGÉDIA TÉCNICA)
+A parte final do projeto desafia a lógica tradicional de "vitória". Para salvar Kaori, o Operador deve executar o [Protocolo de Sacrifício]. 
+
+Tecnicamente, isso é implementado através de uma Exceção Proposital Não Tratada. No momento em que Kaori atinge a saída do Setor 4, o jogador deve transferir toda a carga de paradoxo para o seu próprio terminal em 2099. 
+A Consequência: Kaori é ancorada na realidade e foge, mas o preço é a integridade do sistema do Operador. O jogo termina com uma sequência de bugs Visuais Críticos: o código das classes POO vaza para a interface,
+os pixels "sangram" e o terminal entra em colapso térmico. 
+
+Você a salvou, mas em 2099, o seu sinal se apaga para sempre.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+________________________________________________________________________________
+      ___           ___           ___           ___           ___       
+     /  /\         /  /\         /  /\         /  /\         /__/\      
+    /  /:/_       /  /:/        /  /::\       /  /::\        \  \:\     
+   /  /:/ /\     /  /:/        /  /:/\:\     /  /:/\:\        \  \:\    
+  /  /:/ /:/_   /  /:/  ___   /  /:/  \:\   /  /:/  \:\   _____\__\:\   
+ /__/:/ /:/ /\ /__/:/  /  /\ /__/:/ \__\:\ /__/:/ \__\:\ /__/::::::::\  
+ \  \:\/:/ /:/ \  \:\ /  /:/ \  \:\ /  /:/ \  \:\ /  /:/ \  \:\~~~\~~\/  
+  \  \::/ /:/   \  \:\  /:/   \  \:\  /:/   \  \:\  /:/   \  \:\  ~~~   
+   \  \:\/:/     \  \:\/:/     \  \:\/:/     \  \:\/:/     \  \:\       
+    \  \::/       \  \::/       \  \::/       \  \::/       \  \:\      
+     \__\/         \__\/         \__\/         \__\/         \__\/      
+
+    [ TRANSMISSÃO DE DADOS: 2099 -> 1987 ]
+________________________________________________________________________________
+
+> OPERADOR: Dandara Monike (2NA_ADS)
+> STATUS: CONEXÃO ESTÁVEL // PROTOCOLO PHANTOM-7 ATIVO
+________________________________________________________________________________
+
+[ ARQUITETURA DO SISTEMA ]
+  |
+  |-- [ CLASSES ]
+  |    |-- Cena (Base)
+  |    |-- CenaSacrificio (Polimorfismo / Glitch)
+  |
+  |-- [ MOTOR TÁTICO ]
+  |    |-- Grid 5x5 (Canvas API)
+  |    |-- IA de Perseguição (Invasores)
+  |    |-- Verificação de Escopo (check)
+  |
+  |-- [ ESTADOS ]
+       |-- Paradoxo Temporal
+       |-- Confiança (Kaori)
+       |-- Overheat (Final de 2099)
+
+________________________________________________________________________________
+      "A LÓGICA É SUA ÚNICA ARMA. O SACRIFÍCIO É SEU ÚNICO DESFECHO."
+________________________________________________________________________________
+
+
+[ CLASSES ]
+
+-[CENA (BASE)]
+É a classe que você criou para gerenciar o texto e as opções (os botões de escolha).
+Ela é o molde para tudo que acontece no jogo.
+
+- [CenaSacrificio (Polimorfismo / Glitch)] 
+Aqui está o ponto alto. Ela é uma classe "Filha" que herda tudo da Cena, mas você usou Polimorfismo 
+para mudar o comportamento dela. Quando ela carrega, ela não apenas mostra texto, ela "quebra" o sistema 
+com o efeito de glitch.
+
+
+[ MOTOR TÁTICO ]
+
+- [Grid 5x5 (Canvas API)]
+É o mapa que você desenhou usando ctx.fillRect e ctx.strokeRect. O tamanho 5x5 é o limite 
+do tabuleiro que você definiu.
+
+- [IA de Perseguição]
+É a lógica que você colocou para os Invasores (X) calcularem a distância e se moverem 
+em direção à Kaori (K) a cada turno.
+
+Verificação de Escopo (check): É o método check() que você criou dentro do motor do mapa. 
+Ele é o "juiz" que decide se o jogo acaba em vitória, captura ou falta de tempo.
+
+
+[ ESTADOS ]
+
+[Paradoxo Temporal & Confiança] 
+São as variáveis globais que você declarou no início (let paradoxo = 3; let confianca = 3;). 
+Elas controlam o destino da história.
+
+[Overheat (Final de 2099)]
+ É o estado final ativado pela flag travandoSistema e pela cena de sacrifício, mudando 
+ a cor do terminal para o azul de erro (BSOD).
+
+
+
+=============================================================================================================================================================================================================================
+=============================================================================================================================================================================================================================
+[REGISTRO DE DESENVOLVIMENTO]
+O Processo,mapeamento de falhas e o histórico de iterações pela IA estão indexados diretamente
+nos comentários do arquivo script.js. Cada bloco lógico principal contém notas sobre o 
+processos comandos de prompt que permitiram a estabilização do sinal entre 1987 e 2099.
+=============================================================================================================================================================================================================================
+=============================================================================================================================================================================================================================
