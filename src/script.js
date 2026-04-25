@@ -338,10 +338,10 @@ let mapaAtivo = false;
 let posicaoKaori = { x: 1, y: 3 }; 
 let posicaoInvasores = { x: 3, y: 1 };
 const LAYOUT_MAPA = [
-    [1, 1, 2, 1, 1], // 1=Parede, 2=Saída
-    [1, 3, 0, 0, 1], // 3=Obstáculo
-    [1, 0, 1, 0, 1],
+    [1, 1, 1, 1, 1],
     [1, 0, 0, 0, 1],
+    [1, 0, 2, 0, 1], // O '2' agora é o centro vitorioso
+    [1, 0, 0, 3, 1], 
     [1, 1, 1, 1, 1]
 ];
 
@@ -417,19 +417,25 @@ class MotorMapa {
     }
 
     mover(k) {
-        let n = { ...posicaoKaori };
-        if (k === 'w') n.y--; if (k === 's') n.y++; if (k === 'a') n.x--; if (k === 'd') n.x++;
-        if (LAYOUT_MAPA[n.y] && LAYOUT_MAPA[n.y][n.x] !== 1) {
-            posicaoKaori = n;
-            this.passos++;
+    let n = { ...posicaoKaori };
+    if (k === 'w') n.y--; if (k === 's') n.y++; if (k === 'a') n.x--; if (k === 'd') n.x++;
+    
+    if (LAYOUT_MAPA[n.y] && LAYOUT_MAPA[n.y][n.x] !== 1) {
+        posicaoKaori = n;
+        this.passos++;
+
+        // BURLA: A IA só move se o número de passos for par
+        if (this.passos % 2 === 0) {
             if (posicaoInvasores.x > n.x) posicaoInvasores.x--; 
             else if (posicaoInvasores.x < n.x) posicaoInvasores.x++;
             if (posicaoInvasores.y > n.y) posicaoInvasores.y--;
             else if (posicaoInvasores.y < n.y) posicaoInvasores.y++;
-            this.check();
         }
-        this.desenhar();
+        
+        this.check();
     }
+    this.desenhar();
+}
 
     check() {
     // 1. Prioridade total para a VITÓRIA: se ela pisou na saída, ela escapou.
