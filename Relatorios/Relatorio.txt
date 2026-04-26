@@ -13,7 +13,7 @@ Essa referência serviu como guia para a escolha da estética visual e da mecân
 
 [BRAINSTORMING]
 Focado em alinhar a proposta do jogo aos requisitos técnicos da disciplina, gerei algumas ideias que seriam interessantes para a proposta de jogo 
-dentro do meu propósito e requisitos. O objetivo central foi equilibrar uma narrativa criativa com a aplicação prática de lógica de programação, 
+dentro do meu propósito e requisitos.O objetivo central foi equilibrar uma narrativa criativa com a aplicação prática de lógica de programação, 
 utilizando JavaScript e a API Canvas.Escolhi trabalhar encima da minha proposta de jogo inicial desenvolvendo uma proposta que não focasse tanto
 na manipulação de assets, mas no necessário gráfico e aplicação dos conceitos base de POO, mas que trouxesse uma chamada criativa e que instigasse o usuário.
 
@@ -91,11 +91,11 @@ ________________________________________________________________________________
 [ CLASSES ]
 
 -[CENA (BASE)]
-É a classe que você criou para gerenciar o texto e as opções (os botões de escolha).
+É a classe criada para gerenciar o texto e as opções (os botões de escolha).
 Ela é o molde para tudo que acontece no jogo.
 
 - [CenaSacrificio (Polimorfismo / Glitch)] 
-Aqui está o ponto alto. Ela é uma classe "Filha" que herda tudo da Cena, mas você usou Polimorfismo 
+Ela é uma classe "Filha" que herda tudo da Cena, utilização do Polimorfismo 
 para mudar o comportamento dela. Quando ela carrega, ela não apenas mostra texto, ela "quebra" o sistema 
 com o efeito de glitch.
 
@@ -103,21 +103,21 @@ com o efeito de glitch.
 [ MOTOR TÁTICO ]
 
 - [Grid 5x5 (Canvas API)]
-É o mapa que você desenhou usando ctx.fillRect e ctx.strokeRect. O tamanho 5x5 é o limite 
-do tabuleiro que você definiu.
+É o mapa foi desenhaso usando ctx.fillRect e ctx.strokeRect. O tamanho 5x5 é o limite 
+do tabuleiro.
 
 - [IA de Perseguição]
-É a lógica que você colocou para os Invasores (X) calcularem a distância e se moverem 
+É a lógica para os Invasores (X) calcularem a distância e se moverem 
 em direção à Kaori (K) a cada turno.
 
-Verificação de Escopo (check): É o método check() que você criou dentro do motor do mapa. 
+- Verificação de Escopo (check): É o método check() criado dentro do motor do mapa. 
 Ele é o "juiz" que decide se o jogo acaba em vitória, captura ou falta de tempo.
 
 
 [ ESTADOS ]
 
 [Paradoxo Temporal & Confiança] 
-São as variáveis globais que você declarou no início (let paradoxo = 3; let confianca = 3;). 
+São as variáveis globais declaradas no começo (let paradoxo = 3; let confianca = 3;). 
 Elas controlam o destino da história.
 
 [Overheat (Final de 2099)]
@@ -128,7 +128,7 @@ Elas controlam o destino da história.
 
 =============================================================================================================================================================================================================================
 =============================================================================================================================================================================================================================
-[REGISTRO DE DESENVOLVIMENTO COM PRINCIPAIS PROMPTS]
+[REGISTRO DE DESENVOLVIMENTO - COM PRINCIPAIS PROMPTS]
 =============================================================================================================================================================================================================================
 =============================================================================================================================================================================================================================
 
