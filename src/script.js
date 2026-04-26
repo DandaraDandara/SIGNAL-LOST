@@ -340,7 +340,7 @@ let posicaoInvasores = { x: 3, y: 1 };
 const LAYOUT_MAPA = [
     [1, 1, 1, 1, 1],
     [1, 0, 0, 0, 1],
-    [1, 0, 2, 0, 1], // O '2' agora é o centro vitorioso
+    [1, 0, 2, 0, 1], // O '2' centro vitorioso
     [1, 0, 0, 3, 1], 
     [1, 1, 1, 1, 1]
 ];
@@ -456,7 +456,7 @@ class MotorMapa {
 }
 }
 
-// INSTÂNCIA DO MOTOR (ESSA LINHA É A ALTERAÇÃO NECESSÁRIA)
+// INSTÂNCIA DO MOTOR 
 const motorMapa = new MotorMapa();
 
 // --- FLUXO DO JOGO ---

@@ -128,9 +128,30 @@ Elas controlam o destino da história.
 
 =============================================================================================================================================================================================================================
 =============================================================================================================================================================================================================================
-[REGISTRO DE DESENVOLVIMENTO]
-O Processo,mapeamento de falhas e o histórico de iterações pela IA estão indexados diretamente
-nos comentários do arquivo script.js. Cada bloco lógico principal contém notas sobre o 
-processos comandos de prompt que permitiram a estabilização do sinal entre 1987 e 2099.
+[REGISTRO DE DESENVOLVIMENTO COM PRINCIPAIS PROMPTS]
 =============================================================================================================================================================================================================================
 =============================================================================================================================================================================================================================
+
+
++-----------------------+--------------+--------------------------+-----------------------------------------------------------+
+| FASE DO PROJETO       | IA UTILIZADA | DESAFIO ABORDADO         | ESTRATÉGIA DE PROMPT / CONTRIBUIÇÃO                       |
++-----------------------+--------------+--------------------------+-----------------------------------------------------------+
+| Arquitetura de Dados  | Gemini       | Estruturação POO         | Criação da classe base 'Cena' e herança para o final.     |
+|                       |              |                          | Garantiu código escalável e organização de objetos.       |
++-----------------------+--------------+--------------------------+-----------------------------------------------------------+
+| Motor do Mapa         | ChatGPT      | Lógica de Grid e Colisão | Matriz 5x5 com validação de paredes e detecção de saída.  |
+|                       |              |                          | Impediu que o jogador atravessasse o cenário.             |
++-----------------------+--------------+--------------------------+-----------------------------------------------------------+
+| Balanceamento de IA   | ChatGPT      | IA de Perseguição        | Algoritmo de passos alternados (player move 2, IA move 1).|
+|                       |              |                          | Tornou o minijogo tático possível de ser vencido.         |
++-----------------------+--------------+--------------------------+-----------------------------------------------------------+
+| UX e Segurança        | Gemini       | Travamento de Inputs     | Flag 'travandoSistema' para ignorar teclas no encerramento|
+|                       |              |                          | Evitou quebras de script durante as animações finais.     |
++-----------------------+--------------+--------------------------+-----------------------------------------------------------+
+| Estética e Visual     | Gemini       | Efeito Glitch e CRT      | Manipulação de Canvas para cores aleatórias e 'flicker'.   |
+|                       |              |                          | Criou a imersão de terminal antigo corrompido.            |
++-----------------------+--------------+--------------------------+-----------------------------------------------------------+
+| Debugging             | ChatGPT      | Limpeza de Frames        | Correção do rastro visual no movimento do caractere 'K'.  |
+|                       |              |                          | Redesenho dinâmico do background a cada iteração.         |
++-----------------------+--------------+--------------------------+-----------------------------------------------------------+
+
